@@ -2,13 +2,19 @@
   "name": "google-books-search",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bbierman7.github.io/google-books-search",
   "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
     "mongoose": "^5.5.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "socket.io": "^2.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -28,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
