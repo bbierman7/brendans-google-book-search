@@ -14,7 +14,6 @@ if(process.env.NODE_ENV === "production"){
     app.use(express.static("client/build"))
 };
 
-app.get("/api/books", (req, res) => res.send("Hello World!!!"))
 // Adding routes, both API and view
 app.use(routes);
 

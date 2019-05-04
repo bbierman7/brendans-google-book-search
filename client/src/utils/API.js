@@ -14,6 +14,6 @@ export default {
         return axios.delete("api/books/" + bookId);
     } , 
     searchGoogleBooks(bookQuery){
-        return axios.get("https://www.googleapi.com/books/v1/volumes", { params: {q: bookQuery }})
+        return axios.get("https://www.googleapis.com/books/v1/volumes", { params: {q: bookQuery }})
     }
 }
